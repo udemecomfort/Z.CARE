@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: -webkit-linear-gradient(left, #12ac8e,#0d846c);
+  }
+  .Animated-LoginForm2{
+    max-width: 450px;
+    background: #e0f1ff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.5);
+  }
+  .Animated-LoginForm2 .slide-controls{
+    position: relative;
+    display: flex;
+    margin: 30px 0 10px 0;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+  }
+  .slide-controls .slide{
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+  }
+  .slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    border-radius: 50px;
+    background: -webkit-linear-gradient(left, #12ac8e,#0d846c);
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #signup:checked ~ .slider-tab{
+    left: 50%;
+  }
+  #signup:checked ~ label.login{
+    color:#12ac8e;
+  }
+  #login:checked ~ label.signup{
+    color: #12ac8e;
+  }
+  .Animated-LoginForm2 .container_for_loginForm{
+    overflow: hidden;
+  }
+  .container_for_loginForm .form-content{
+    display: flex;
+    width: 200%;
+  }
+  .container_for_loginForm .form-content form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .form-content form .field{
+    height: 50px;
+    margin-top: 20px;
+  }
+  .form-content form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  .form-content form .field input:focus{
+    border-color:#12ac8e;
+  }
+  .form-content form .field input::placeholder{
+    color: #999;
+    transition: all 0.3s ease;
+  }
+  .form-content form .pass-link{
+    margin-top: 20px;
+  }
+  .form-content form .signup-link{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .form-content form .pass-link a, .form-content form .signup-link a{
+    color: #12ac8e;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+  }
+  .form-content form .pass-link a:hover, .form-content form .signup-link a:hover{
+    text-decoration: underline;
+  }
+  form .btn{
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .btn-layer{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right, #12ac8e, #0d846c, #e9f7f7,#0d846c);
+    transition: all 0.4s ease;;
+  }
+  form .btn:hover .btn-layer{
+    left: 0;
+  }
+  form .btn input[type="submit"]{
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
